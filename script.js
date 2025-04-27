@@ -19,12 +19,14 @@ function checkGuess() {
         message.textContent = "Too high! Try again.";
         message.style.color = "orange";
     }
-    function restartGame() {
-        randomNumber = Math.floor(Math.random() * 100) + 1;
-        document.getElementById('guess').value = '';
-        document.getElementById('message').textContent = '';
-    }
-
 }
 function restartGame() {
+    randomNumber = Math.floor(Math.random() * 100) + 1;
+    document.getElementById('guess').value = '';
+    document.getElementById('message').textContent = '';
 }
+    document.addEventListener('DOMContentLoaded', () => {
+       const restartButton = document.getElementById('restart-game');
+       restartButton.addEventListener('click', restartGame);
+    });
+
