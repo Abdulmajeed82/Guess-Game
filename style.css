@@ -7,13 +7,12 @@ body{
 }
 .game-container{
     padding: 20px;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center;
     background-color: white;
     border-radius: 10px;
-    box-shadow: black  4px 4px 4px 4px;
+    box-shadow: black  0px 4px 8px 4px;
     width: 500px;
     height: 300px;
     margin: 50px auto;
@@ -27,6 +26,7 @@ input[type="number"]{
     font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 button{
     padding: 10px 20px;
@@ -52,8 +52,8 @@ button:hover{
     color: #333;
     background-color: #ccc;
 }
-#reset-btn{
-    padding: 20px
+#restart-game{
+    padding: 20px;
     font-size: 20px;
 }
 #reset-btn:hover{
